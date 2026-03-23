@@ -1,0 +1,118 @@
+import type { Crop } from '@/types';
+
+export const CROPS: Crop[] = [
+  {
+    id: 'rice', name: 'Rice', fullName: 'Rice – Irrigated (High Yield)',
+    icon: '🌾', slug: 'rice',
+    npk: { n: 120, p: 60, k: 60 }, season: 'Kharif/Boro',
+    source: 'BRRI/ICAR', yield: '6–8 t/ha',
+    description: 'Accurate NPK fertilizer recommendations for irrigated rice. Based on BRRI and ICAR research.',
+    keywords: ['rice fertilizer', 'rice NPK calculator', 'paddy fertilizer', 'urea for rice', 'DAP for rice'],
+    category: 'Cereal',
+  },
+  {
+    id: 'wheat', name: 'Wheat', fullName: 'Wheat',
+    icon: '🌿', slug: 'wheat',
+    npk: { n: 120, p: 60, k: 40 }, season: 'Rabi',
+    source: 'ICAR/FAO', yield: '4–5 t/ha',
+    description: 'Calculate exact fertilizer doses for wheat. Science-based NPK recommendations from ICAR.',
+    keywords: ['wheat fertilizer', 'wheat NPK', 'urea for wheat', 'fertilizer for wheat'],
+    category: 'Cereal',
+  },
+  {
+    id: 'maize', name: 'Maize', fullName: 'Maize (Corn)',
+    icon: '🌽', slug: 'maize',
+    npk: { n: 150, p: 75, k: 75 }, season: 'Kharif/Summer',
+    source: 'IPNI/FAO', yield: '6–8 t/ha',
+    description: 'Free maize fertilizer calculator. Precise NPK doses for corn cultivation.',
+    keywords: ['maize fertilizer', 'corn fertilizer calculator', 'NPK for maize', 'corn NPK ratio'],
+    category: 'Cereal',
+  },
+  {
+    id: 'tomato', name: 'Tomato', fullName: 'Tomato',
+    icon: '🍅', slug: 'tomato',
+    npk: { n: 150, p: 75, k: 150 }, season: 'Rabi/Summer',
+    source: 'AVRDC/ICAR', yield: '40–60 t/ha',
+    description: 'Tomato fertilizer calculator with NPK recommendations for high-yield farming.',
+    keywords: ['tomato fertilizer', 'NPK for tomato', 'tomato crop nutrition'],
+    category: 'Vegetable',
+  },
+  {
+    id: 'potato', name: 'Potato', fullName: 'Potato',
+    icon: '🥔', slug: 'potato',
+    npk: { n: 180, p: 80, k: 150 }, season: 'Rabi',
+    source: 'CIP/ICAR', yield: '25–35 t/ha',
+    description: 'Potato fertilizer requirements and NPK calculator for high yields.',
+    keywords: ['potato fertilizer', 'NPK for potato', 'fertilizer for potato'],
+    category: 'Vegetable',
+  },
+  {
+    id: 'onion', name: 'Onion', fullName: 'Onion',
+    icon: '🧅', slug: 'onion',
+    npk: { n: 100, p: 50, k: 100 }, season: 'Rabi',
+    source: 'NHRDF/ICAR', yield: '25–35 t/ha',
+    description: 'Onion fertilizer calculator. Calculate NPK requirements for onion cultivation.',
+    keywords: ['onion fertilizer', 'NPK for onion', 'fertilizer for onion'],
+    category: 'Vegetable',
+  },
+  {
+    id: 'sugarcane', name: 'Sugarcane', fullName: 'Sugarcane',
+    icon: '🎋', slug: 'sugarcane',
+    npk: { n: 250, p: 100, k: 200 }, season: 'Annual',
+    source: 'ICAR-SBI', yield: '80–100 t/ha',
+    description: 'Sugarcane fertilizer calculator with NPK doses. Based on ICAR-SBI research.',
+    keywords: ['sugarcane fertilizer', 'NPK for sugarcane', 'fertilizer for sugarcane'],
+    category: 'Cash Crop',
+  },
+  {
+    id: 'cotton', name: 'Cotton', fullName: 'Cotton',
+    icon: '🌱', slug: 'cotton',
+    npk: { n: 120, p: 60, k: 60 }, season: 'Kharif',
+    source: 'CICR/ICAR', yield: '2–3 t/ha lint',
+    description: 'Cotton fertilizer calculator. NPK recommendations based on ICAR and CICR research.',
+    keywords: ['cotton fertilizer', 'NPK for cotton', 'fertilizer for cotton crop'],
+    category: 'Cash Crop',
+  },
+  {
+    id: 'soybean', name: 'Soybean', fullName: 'Soybean',
+    icon: '🫘', slug: 'soybean',
+    npk: { n: 20, p: 60, k: 40 }, season: 'Kharif',
+    source: 'ICAR/CGIAR', yield: '2–3 t/ha',
+    description: 'Soybean fertilizer calculator. Low N needed — fixes atmospheric nitrogen.',
+    keywords: ['soybean fertilizer', 'NPK for soybean', 'fertilizer for soybean'],
+    category: 'Legume',
+  },
+  {
+    id: 'groundnut', name: 'Groundnut', fullName: 'Groundnut (Peanut)',
+    icon: '🥜', slug: 'groundnut',
+    npk: { n: 20, p: 60, k: 60 }, season: 'Kharif',
+    source: 'ICRISAT', yield: '2–3 t/ha',
+    description: 'Groundnut fertilizer calculator. Accurate NPK doses for peanut cultivation.',
+    keywords: ['groundnut fertilizer', 'peanut fertilizer', 'NPK for groundnut'],
+    category: 'Legume',
+  },
+  {
+    id: 'banana', name: 'Banana', fullName: 'Banana',
+    icon: '🍌', slug: 'banana',
+    npk: { n: 200, p: 60, k: 300 }, season: 'Annual',
+    source: 'NHB/ICAR', yield: '40–60 t/ha',
+    description: 'Banana fertilizer calculator with high potassium requirements.',
+    keywords: ['banana fertilizer', 'NPK for banana', 'potassium for banana'],
+    category: 'Fruit',
+  },
+  {
+    id: 'mustard', name: 'Mustard', fullName: 'Mustard / Rapeseed',
+    icon: '🌼', slug: 'mustard',
+    npk: { n: 90, p: 40, k: 40 }, season: 'Rabi',
+    source: 'ICAR-DRMR', yield: '1.5–2 t/ha',
+    description: 'Mustard fertilizer calculator. NPK requirements for mustard and rapeseed.',
+    keywords: ['mustard fertilizer', 'NPK for mustard', 'rapeseed fertilizer'],
+    category: 'Oilseed',
+  },
+];
+
+export const getCropBySlug = (slug: string): Crop | undefined =>
+  CROPS.find(c => c.slug === slug);
+
+export const getAllCropSlugs = (): string[] =>
+  CROPS.map(c => c.slug);
